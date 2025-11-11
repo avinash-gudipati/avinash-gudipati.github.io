@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avinash Gudipati — Portfolio</title>
+  <meta name="description" content="Telecommunications & Wireless Engineer specializing in Wi-Fi, LTE, and RF systems. MS Telecommunications, University of Maryland."/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:#05060d; --panel:#0f111a; --accent:#38bdf8; --text:#eaecef; --muted:#9ca3af;
+      --radius:16px; --max:1080px;
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0; font-family:"Space Grotesk",sans-serif;
+      background:radial-gradient(circle at 20% -10%,rgba(56,189,248,.1),transparent 70%),var(--bg);
+      color:var(--text); line-height:1.6;
+    }
+    a{color:var(--accent); text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    header{
+      max-width:var(--max); margin:auto; padding:4rem 1.5rem 2rem;
+      text-align:center;
+    }
+    h1{font-size:clamp(2rem,4vw,3rem); margin:.2em 0;}
+    .role{color:var(--muted);}
+    main{
+      max-width:var(--max); margin:auto; padding:2rem 1.5rem 4rem;
+      display:grid; gap:2rem;
+    }
+    section{
+      background:var(--panel); border:1px solid rgba(255,255,255,.08);
+      padding:1.8rem; border-radius:var(--radius);
+      box-shadow:0 10px 25px rgba(0,0,0,.3);
+    }
+    h2{margin-top:0; color:var(--accent);}
+    ul{padding-left:1.4rem;}
+    li{margin:.4rem 0;}
+    footer{
+      text-align:center; padding:2rem; color:var(--muted); font-size:.9rem;
+    }
+    .links{display:flex; justify-content:center; flex-wrap:wrap; gap:1rem; margin-top:1rem;}
+    .btn{
+      background:var(--accent); color:#000; padding:.6rem 1rem; border-radius:8px; font-weight:600;
+      transition:all .25s ease;
+    }
+    .btn:hover{background:#67e8f9;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Avinash Gudipati</h1>
+    <div class="role">Telecommunications & Wireless Systems Engineer</div>
+    <div class="links">
+      <a class="btn" href="mailto:avinash.gudipati@yahoo.com">Contact Me</a>
+      <a class="btn" href="https://www.linkedin.com/in/avinash-gudipati/" target="_blank">LinkedIn</a>
+      <a class="btn" href="https://github.com/avinash-gudipati" target="_blank">GitHub</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I’m a Telecommunications Engineer with strong foundations in <b>Wireless Systems, RF Optimization, and Signal Processing</b>. 
+        I’ve worked on compression technology and cellular simulations bridging software and hardware layers. 
+        I enjoy transforming technical insights into measurable system-level improvements.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li><b>RF Research Intern — MimoCloud</b><br/>
+          Developed and tested nonlinear compression models for audio and sonar data, achieving ~100:1 compression while maintaining high ML detection accuracy. Automated evaluation pipelines using MATLAB.</li>
+        <li><b>Graduate Teaching Assistant — University of Maryland</b><br/>
+          Guided students in Wireshark, Linux networking, and Juniper router configuration; trained them toward JNCIA-level proficiency.</li>
+        <li><b>Intern — Zettamine Labs</b><br/>
+          Built an Android messaging system using AWS EC2 for real-time event-triggered communication.</li>
+        <li><b>Trainee — Bharat Dynamics Limited</b><br/>
+          Designed a missile health-monitoring prototype integrating multiple sensors using Proteus simulation.</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><b>In-Building Radio Network Simulation:</b> Modeled LTE/HSPA coverage with 99% compliance using iBwave; analyzed link budget and RSRP/RSCP metrics.</li>
+        <li><b>Small Cell Handoff Simulation:</b> Simulated downlink behavior using COST-231 and Okumura-Hata propagation models in Python.</li>
+        <li><b>Smart Irrigation System:</b> Designed an automated Arduino-based irrigation controller using moisture sensors and Bluetooth feedback loop.</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p><b>MS in Telecommunications</b>, University of Maryland — GPA 3.71/4.0 (2022-2024)</p>
+      <p><b>BE in Electronics & Communication</b>, Matrusri Engineering College — GPA 8.26/10 (2017-2021)</p>
+      <p>Certifications: JNCIA-Junos, Machine Learning (Stanford Online), Cloud Computing (IIT-Kharagpur), Semiconductors (IISc Bangalore)</p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><b>Programming:</b> Python, C/C++, MATLAB, Linux Shell</li>
+        <li><b>Wireless & Networking:</b> WiFi, LTE, TCP/IP, OSPF, MPLS, BGP, VLAN, DHCP, DNS</li>
+        <li><b>Tools:</b> PyTorch, iBwave, Wireshark, GNU Radio, Cisco Packet Tracer</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 2025 Avinash Gudipati · <a href="https://www.linkedin.com/in/avinash-gudipati/">LinkedIn</a></div>
+  </footer>
+</body>
+</html>
